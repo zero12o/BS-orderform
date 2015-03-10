@@ -61,10 +61,10 @@ function auto_copyright($year = 'auto'){
                     
  <!-- ========================================================================================================= -->
                 <!-- =========================== 		Enter Your Infusionsoft Parameters Here	   ================================ -->
-          	<form id="orderForm" action="https://wh185.infusionsoft.com/AddForms/processFormSecure.jsp" method='Post' class="form-horizontal">
-                    <input id="infusion_xid" name="infusion_xid" type="hidden" value="3a6351a05a21316fbaae9c24da955034" />
+          	<form id="orderForm" action="https://<your_app_name>.infusionsoft.com/AddForms/processFormSecure.jsp" method='Post' class="form-horizontal">
+                    <input id="infusion_xid" name="infusion_xid" type="hidden" value="<formid>" />
                     <input id="infusion_type" name="infusion_type" type="hidden" value="CustomFormSale" />
-                    <input id="infusion_name" name="infusion_name" type="hidden" value="Clifford Bennet DUS" />
+                    <input id="infusion_name" name="infusion_name" type="hidden" value="Order Form Name" />
                     <input id="CAttempt" name="CAttempt" type="hidden" />
                     <input id="NotLegacy" name="NotLegacy" type="hidden" value="true" />
                     <input id="ProductId" name="ProductId" type="hidden" value="14" />
