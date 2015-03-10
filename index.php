@@ -1,10 +1,4 @@
 <?php 
-	$firstname = $_REQUEST['firstname'];
-	$lastname = $_REQUEST['lastname'];
-	$email = $_REQUEST['email'];
-	$phone = $_REQUEST['phone'];
-?>
-<?php 
 function auto_copyright($year = 'auto'){ 
 	if(intval($year) == 'auto'){ $year = date('Y'); } 
 	if(intval($year) == date('Y')){ echo intval($year); } 
@@ -84,21 +78,21 @@ function auto_copyright($year = 'auto'){
                     <div class="form-group">
                         <div class="col-lg-4">
                             <label for="First_Name">First Name</label>
-                            <input id="First_Name" required class="form-control" type="text" placeholder="First Name" name="Contact0FirstName" value="<?php echo $firstname; ?>" />
+                            <input id="First_Name" required class="form-control" type="text" placeholder="First Name" name="Contact0FirstName"  />
                         </div><!-- col-lg-4 -->
                         <div class="col-lg-4">
                             <label for="Last_Name">Last Name</label>
-                            <input id="Last_Name" required class="form-control" type="text" placeholder="Last Name" name="Contact0LastName" value="<?php echo $lastname; ?>" />
+                            <input id="Last_Name" required class="form-control" type="text" placeholder="Last Name" name="Contact0LastName"  />
                         </div><!-- col-lg-4 -->
                         <div class="col-lg-4">
                             <label for="Email">Email</label>
-                            <input id="Email" required class="form-control" type="text" placeholder="Email" name="Contact0Email" value="<?php echo $email; ?>" />
+                            <input id="Email" required class="form-control" type="text" placeholder="Email" name="Contact0Email"  />
                         </div><!-- col-lg-4 -->
                     </div><!-- form-group -->
                     <div class="form-group">
                          <div class="col-lg-4">
                              <label for="Phone">Phone</label>
-                             <input id="Phone" required class="form-control" type="text" placeholder="Phone" name="Contact0Phone1" value="<?php echo $phone; ?>" />
+                             <input id="Phone" required class="form-control" type="text" placeholder="Phone" name="Contact0Phone1" />
                          </div><!-- col-lg-4 -->
                          <div class="col-lg-4">
                             <label for="Membership_Password">Setup Your  Membership Password</label>
