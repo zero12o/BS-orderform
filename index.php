@@ -9,22 +9,21 @@ function auto_copyright($year = 'auto'){
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:900,500,700,400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Order Form Step Two</title>
+    <title>Order Form</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+    <!--[if lt IE 9]> 
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script src="js/countdown.js" type="text/javascript"></script> <!-- recommended by developer to have this on the header -->
 <!--    <script type="text/javascript">
     	function redirectuser() {
 			window.location.replace("http://stackoverflow.com");
@@ -50,7 +49,7 @@ function auto_copyright($year = 'auto'){
     </script>
   </head>
   <body>
-  	<div class="container containerbackground">
+  	<article class="container">
     	<div class="row">
         	<div class="col-lg-12">
             	<h2 class="text-center"><i class="fa fa-html5 fa-4x"></i>  <i class="fa fa-css3 fa-4x"></i>Bootstrap Order Form Template</h2>
@@ -60,19 +59,9 @@ function auto_copyright($year = 'auto'){
                     
                     
  <!-- ========================================================================================================= -->
-                <!-- =========================== 		Enter Your Infusionsoft Parameters Here	   ================================ -->
-          	<form id="orderForm" action="https://<your_app_name>.infusionsoft.com/AddForms/processFormSecure.jsp" method='Post' class="form-horizontal">
-                    <input id="infusion_xid" name="infusion_xid" type="hidden" value="<formid>" />
-                    <input id="infusion_type" name="infusion_type" type="hidden" value="CustomFormSale" />
-                    <input id="infusion_name" name="infusion_name" type="hidden" value="Order Form Name" />
-                    <input id="CAttempt" name="CAttempt" type="hidden" />
-                    <input id="NotLegacy" name="NotLegacy" type="hidden" value="true" />
-                    <input id="ProductId" name="ProductId" type="hidden" value="14" />
-                    <input id="PayTotal_A" name="PayTotal_A" type="hidden" value="10.0" />
-                    <input id="PlanCount_A" name="PlanCount_A" type="hidden" value="1" />
-                    <input type="radio" class="radio hidden" name="PurchaseType" value="A" checked>
-                    <input value="10.0" id="PayTotal_A" type="hidden" name="PayTotal_A" />
-                    <input value="1" id="PlanCount_A" type="hidden" name="PlanCount_A" />
+                <!-- =========================== 		Enter Your Form Parameters Here	   ================================ -->
+          	<form id="orderForm" action="https://<app_name>.infusionsoft.com/AddForms/processFormSecure.jsp" method='Post' class="form-horizontal">
+
                 <!-- ============================================================================================= -->
  					<p class="lead_order">Personal Information</p>
                     <div class="form-group">
@@ -178,26 +167,24 @@ function auto_copyright($year = 'auto'){
                     		<input type="text" id="signature" class="form-control" name="Custom-Initials" placeholder="Type your signature to confirm your purchase" />						
                        </div><!-- col-xs-10 -->
                      </div><!-- form-group  -->
-                     <h3 class="text-center"><button class="btn btn-lg btn-lgpadd btn-warning text-uppercase" name="submit" type="submit">Order Now  <i class="fa fa-shopping-cart "></i></button></h3>
+                     <h3 class="text-center"><button id="submit" class="btn btn-lg btn-warning text-uppercase" name="submit" type="submit">Order Now  <i class="fa fa-shopping-cart "></i></button></h3>
         	 </form> 
             </div><!--  col-lg-12 -->
         </div><!-- row -->
-    </div><!-- contaniner  -->
-  	<div class="container nopadding footer">
+    </article><!-- contaniner  -->
+    <footer class="container  footer">
     	<div class="row">
         	<div class="col-lg-12">
-            	<footer>
-                	<ul>
-                	  <li><strong>Lorem Ipsum  &copy; <?php auto_copyright(); ?></strong> &nbsp;&nbsp;</li>
-                	  <li><a href="#">Privacy Policy</a></li>
-                	  <li><a href="#">Disclaimer</a></li>
-                	  <li><a href="#">Contact Us</a></li>
-                	  <li><a href="#">Terms of Service</a></li>
-              	  </ul>
-            	</footer>
+                  <ul>
+                    <li>Lorem Ipsum  &copy;<?php auto_copyright(); ?></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
             </div><!--  col-lg-12 -->
-        </div>
-    </div><!-- contaniner  -->    
+        </div><!-- row -->
+    </footer>  
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
